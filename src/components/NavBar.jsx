@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 export default function NavBar(){
+    const linkClass = ({ isActive }) =>
             `px-3 py-2 rounded-md text-sm transition-colors ${
         isActive
             ? "text-white bg-slate-800"
@@ -12,7 +13,7 @@ export default function NavBar(){
 
             <div className="max-w-5x1 mx-auto flex items-center justify-between">
 
-            <div className="font semi-bold text-slate-900 dark text:white">
+            <div className="font semibold text-slate-900 dark:text-white">
                 Noah Hickey
             </div>
 
