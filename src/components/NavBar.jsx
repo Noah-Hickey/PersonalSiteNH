@@ -30,6 +30,7 @@ export default function NavBar(){
                 <NavLink to="/contact" className={linkClass}>
                     Contact
                 </NavLink>
+        
             </div>
         </div>
         </nav>

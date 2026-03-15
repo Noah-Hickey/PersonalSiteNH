@@ -14,5 +14,8 @@ export default function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+
     </div>);
+
 }
