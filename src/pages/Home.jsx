@@ -50,8 +50,8 @@ export default function Home() {
             {description}
         </p>
         </div>
-    ))}
-    </section>
+        ))}
+        </section>
 
         </section>
     );
