@@ -8,7 +8,7 @@ export default function Story() {
         </p>
 
         <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
-        <div className="grid gap-8 md:grid-cols-[260px_1fr] items-center">
+        <div className="grid gap-8 md:grid-cols-[280px_1fr] items-center">
 
             {/* Video */}
             <div className="flex justify-center">
@@ -20,8 +20,8 @@ export default function Story() {
                 playsInline
             >
                 <source
-                src="/HomeVideo.mov"
-                type="video/quicktime"
+                src="/HomeVideo.mp4"
+                type="video/mp4"
                 />
             </video>
             </div>
@@ -32,7 +32,7 @@ export default function Story() {
             </p>
 
             <h2 className="text-3xl font-semibold text-white">
-                Grand Le Pierre, Newfoundland
+                Grand Le Pierre, Newfoundland 📍
             </h2>
 
             <p className="leading-8 text-slate-300">
@@ -52,6 +52,55 @@ export default function Story() {
 
         </div>
         </div>
+
+         <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+        <div className="grid gap-8 md:grid-cols-[1fr_280px] items-center">
+           
+            <div className="space-y-4">
+            <p className="text-sm uppercase tracking-[0.2em] text-teal-300">
+                My Journey
+            </p>
+
+            <h2 className="text-3xl font-semibold text-white">
+              Travel, Experiences, & Shifting Perspective 🚘✈️📱🎓
+            </h2>
+
+            <p className="leading-8 text-slate-300">
+              Throughout my life I travelled to many places. In Canada I have visited many parts of Newfoundland, 
+              Nova Scotia, Prince Edward Island, multiple trips to Ontario, Alberta, and British Columbia.
+            </p>
+
+             <p className="leading-8 text-slate-300">
+              Other places I have travelled outside of Canada include California, Montana, Saint Pierre et Miquelon,
+              and Mexico. I enjoy travelling and would love to do more in the future. It is very rewarding to 
+              gain knowledge, experiences, and learn about different cultures.
+            </p>
+
+            <p className="leading-8 text-slate-300">
+               After graduating high school, I did 3 months of student work in my hometown of Grand Le Pierre. 
+               I completed the CAS Transfer Year for 2 semesters and gained a taste of 
+               living on my own at the age of 18. I worked during a season of lobster fishing in 2017.
+                I then decided to pursue nursing but after 2 semesters of trying, I 
+               realized it was not for me. I then decided to take time off to work and discover what I wanted to do.
+               I worked as a janitor for a couple of years and then was promoted to janitorial supervisor in 2022.
+               I eventually decided to try software development in 2024 as I was proficient in computer skills
+               and wanted to try something I felt I was well suited for. I graduated from software development
+               in August 2025 with an honors diploma.
+            </p>
+
+            </div>
+
+          <div className="flex justify-center md:justify-end">
+            <img src="/Graduation_NH.JPEG" alt="Graduation Picture"
+            className="w-[240px] h-[340px] rounded-2xl object-cover border border-slate-700 shadow-lg transition-transform duration-300"
+            />
+
+          
+
+          </div>
+        </div>
+        </div>
+
 
         </div>
        </section>
