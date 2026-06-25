@@ -1,3 +1,5 @@
+import { interests } from "../data/interests";
+
 export default function Story() {
     return (
        <section className= "space-y-8">
@@ -51,7 +53,7 @@ export default function Story() {
             </div>
 
         </div>
-        </div>
+        
 
          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
         <div className="grid gap-8 md:grid-cols-[1fr_280px] items-center">
@@ -71,7 +73,7 @@ export default function Story() {
             </p>
 
              <p className="leading-8 text-slate-300">
-              Other places I have travelled outside of Canada include California, Montana, Saint Pierre et Miquelon,
+              Other places I have travelled internationally include California, Montana, Saint Pierre et Miquelon,
               and Mexico. I enjoy travelling and would love to do more in the future. It is very rewarding to 
               gain knowledge, experiences, and learn about different cultures.
             </p>
@@ -95,13 +97,59 @@ export default function Story() {
             className="w-[240px] h-[340px] rounded-2xl object-cover border border-slate-700 shadow-lg transition-transform duration-300"
             />
 
-          
-
           </div>
         </div>
         </div>
 
 
+  <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+  <div className="space-y-6">
+    <div>
+      <p className="text-sm uppercase tracking-[0.2em] text-teal-300">
+        Things I Enjoy
+      </p>
+
+      <h2 className="text-3xl font-semibold text-white mt-2">
+        Interests, Hobbies, & Passions
+      </h2>
+
+      <p className="leading-8 text-slate-300 mt-3 max-w-3xl">
+        Outside of technology, I enjoy a variety of hobbies and interests that
+        help shape who I am. Whether it&apos;s exploring nature, gaming, music,
+        learning, or trying new experiences, I enjoy staying curious and
+        appreciating the little things.
+      </p>
+    </div>
+    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      {interests.map((interest) => (
+        <div
+          key={interest.title}
+          className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/60 transition-all duration-300 hover:-translate-y-1 hover:border-teal-400/40"
+        >
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src={interest.image}
+              alt={interest.title}
+              className="h-full w-full object-cover"
+              style={{ objectPosition: interest.position }}
+            />
+          </div>
+
+          <div className="p-5">
+            <h3 className="mb-2 text-lg font-semibold text-white">
+              {interest.title}
+            </h3>
+
+            <p className="text-sm leading-6 text-slate-300">
+              {interest.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+      </div>
+    </div>
+        </div>
         </div>
        </section>
     );
