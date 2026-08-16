@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Story from "./pages/Story";
 import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
     return (<div className = "min-h screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100">
@@ -14,7 +15,7 @@ export default function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
+      <Footer />
 
     </div>);
 
