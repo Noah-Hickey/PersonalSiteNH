@@ -40,6 +40,7 @@ import ReviewCard from "../components/ReviewCard";
               date={review.date}
               tags={review.tags}
               description={review.description}
+              image={review.image}
             />
           ))}
         </div>

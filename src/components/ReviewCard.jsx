@@ -6,10 +6,26 @@ export default function ReviewCard({
     maxScore,
     date,
     tags,
-    description
+    description,
+    videoUrl
 }) {
     return (
       <article className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-teal-400/40">
+
+            {videoUrl ? (
+      <div className="mb-5 flex justify-center">
+        <iframe
+          src={videoUrl}
+          title={`${title} TikTok review`}
+          width="325"
+          height="578"
+          className="aspect-[9/16] w-full max-w-[325px] rounded-xl border-0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
+    ) : null}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <p className="text-sm uppercase tracking-[0.2em] text-teal-300">
